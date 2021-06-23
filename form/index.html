@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact me Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- <style>
+
+    </style> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="testbox">
+      <!-- action="/" -->
+      <form role="form" onsubmit="signUp(event);">
+        <div class="banner">
+            <img src="image/logo(2).JPG" alt="logo" height="190px">
+          <!-- <h1>Yoga Application Form</h1> -->
+        </div>
+        <!-- <div class="item">
+          <p>Select Course Date</p>
+          <input type="date" name="bdate" required/>
+          <i class="fas fa-calendar-alt"></i>
+        </div> -->
+        <div class="item" >
+          <p>Name*</p>
+          <div class="name-item">
+            <input type="text" name="first_name" id = "first_name" placeholder="First" required/>
+            <input type="text" name="last_name" id = "last_name" placeholder="Last"  required/>
+          </div>
+        </div>
+        <div class="item">
+          <p>Email*</p>
+          <input type="email" name="email" id = "email" required/>
+         </div>
+        <div class="item">
+          <p>Phone*</p>
+          <input type="text" name="phone_no" id = "phone_no" placeholder="### ### ####"required/>
+        </div>
+       
+          <div class="item">
+            <p>Company Name*</p>
+            <input type="text" name="language" id = "company_name" required/>
+          </div>
+        <div class="item" >
+          <p> Company Address*</p>
+          <input type="text" name="Street_address"id = "Street_address" placeholder="Street address" required/>
+          <input type="text" name="Street_address_line_2" id = "Street_address_line_2"placeholder="Street_address_line_2" required/>
+          <div class="city-item">
+            <input type="text" name="city" id = "city" placeholder="City" required/>
+            <input type="text" name="Region" id = "Region" placeholder="Region" required/>
+            <input type="text" name="Zip_code" id = "Zip_code" placeholder="Postal / Zip code" required/>
+
+            <select required id="country" >
+              <option value="">Country</option>
+              <option value="Russia">Russia</option>
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Armenia">Armenia</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+        </div>
+        <div class="item" >
+          <p>Domain Required</p>
+          
+          <!-- <textarea rows="3"></textarea> -->
+          <textarea class="form-control" id="Domain" name="Domain" rows="3" placeholder="Embedded System || Robotics || IOT || C language || Data Structuse and Algorithm || Web Development || Java"></textarea>
+          <!-- <input  type="text" name="Domain" id = "Domain"  rows="300" cols="140" required/> -->
+        </div>
+        <!-- <div class="item">
+          <p>Illness (if any)</p>
+          <input type="text" name="illness" />
+        </div> -->
+        <div class="item">
+          <p>Additional Message</p>
+          <!-- <textarea rows="3"></textarea> -->
+          <textarea class="form-control" id="Additional_msg" name="Additional_msg" rows="3" placeholder="Your message here"></textarea>
+        </div>
+        <div class="btn-block">
+            <!-- <a class="btn btn-warning btn-md" href="index.html">&#9754; Go back</a> -->
+            <!-- <a href="sahil.html"> -->
+              <!-- <a href=" Portfolio/index.html"> -->
+            <button onclick="goBack()" class="btn warning">Go Back</button>
+          <!-- </a> -->
+        <!-- </a> -->
+          <button type="submit">Send Application</button>
+        </div>
+      </form>
+    </div>
+    <script src="index.js"></script>
+
+    <!-- <script type="text/javascript">
+   
+    </script> -->
+
+    <!-- <script>
+        function goBack() {
+        //   window.history.back();
+        window.location.replace('sahil.html');
+        }
+        </script> -->
+  </body>
+</html>
